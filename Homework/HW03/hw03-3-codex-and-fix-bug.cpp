@@ -80,11 +80,11 @@ else
     {
         for(j=0;j<cols4;j++)
         {
-        Matrix4[i][j] = 0 ;
-        for(k=0;k<cols1;k++) 
-        {
-            Matrix4[i][j] += Matrix1[i][k] * Matrix2[k][j] ; 
-        }
+            Matrix4[i][j] = 0 ;
+            for(k=0;k<cols1;k++) 
+            {
+                Matrix4[i][j] += Matrix1[i][k] * Matrix2[k][j] ; 
+            }
         }
     }
     printf( "\nMatrix1 x Matrix2 is : \n" ) ;
@@ -95,7 +95,7 @@ else
             printf( "%d ", &Matrix4[i][j] ) ;
         }
         printf("\n");
-        }//end for
-    }   //end else
-    return 0 ;
+    }//end for
+}   //end else
+return 0 ;
 }
